@@ -1,1 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agro Forte, Futuro Sustentável</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f2;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #2f6b2f;
+      color: white;
+      padding: 16px 24px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      color: white;
+      background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80') center/cover;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 24px;
+      background: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 24px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2f6b2f;
+      font-size: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    }
+
+    .highlight {
+      background: #e9f7ea;
+      border-left: 6px solid #4caf50;
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .quiz-box {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    }
+
+    button {
+      margin-top: 16px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2f6b2f;
+      color: white;
+      cursor: pointer;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+    }
+
+    footer {
+      text-align: center;
+      background: #1f4d1f;
+      color: white;
+      padding: 30px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h3>🌱 AGRINHO 2026</h3>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#producao">Produção</a></li>
+      <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+      <li><a href="#desafios">Desafios</a></li>
+      <li><a href="#futuro">Futuro</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div>
+    <h1>Agro forte, futuro sustentável</h1>
+    <p>Equilíbrio entre produção agrícola, inovação tecnológica e preservação ambiental para as futuras gerações.</p>
+    <a href="#producao" class="btn">Explorar o Projeto</a>
+  </div>
+</section>
+
+<section id="producao">
+  <h2>Produção Agrícola</h2>
+  <div class="grid">
+    <div class="card"><h3>Economia</h3><p>O agronegócio movimenta a economia, gera empregos e fortalece o desenvolvimento regional.</p></div>
+    <div class="card"><h3>Agricultura de Precisão</h3><p>Uso de sensores, GPS e análise de dados para aumentar produtividade e reduzir desperdícios.</p></div>
+    <div class="card"><h3>Drones Agrícolas</h3><p>Monitoramento aéreo da lavoura, identificação de pragas e mapeamento de áreas cultivadas.</p></div>
+  </div>
+</section>
+
+<section id="sustentabilidade">
+  <h2>Sustentabilidade no Campo</h2>
+  <div class="grid">
+    <div class="card"><h3>Irrigação Inteligente</h3><p>Uso eficiente da água com monitoramento da umidade do solo.</p></div>
+    <div class="card"><h3>Energia Renovável</h3><p>Painéis solares, biomassa e energia limpa aplicadas à produção rural.</p></div>
+    <div class="card"><h3>Conservação do Solo</h3><p>Práticas ecológicas que mantêm a fertilidade e evitam erosão.</p></div>
+  </div>
+</section>
+
+<section id="desafios">
+  <h2>Desafios Ambientais</h2>
+  <div class="highlight">
+    <p><strong>Principais desafios:</strong> desmatamento, uso excessivo da água, emissão de carbono, degradação do solo e mudanças climáticas.</p>
+  </div>
+</section>
+
+<section id="futuro">
+  <h2>Soluções e Futuro</h2>
+  <div class="grid">
+    <div class="card"><h3>Agricultura Regenerativa</h3><p>Produção com recuperação ambiental e melhoria do solo.</p></div>
+    <div class="card"><h3>Inovação Tecnológica</h3><p>Uso da tecnologia como ferramenta de equilíbrio entre produtividade e preservação.</p></div>
+    <div class="card"><h3>Consciência Ambiental</h3><p>Produzir com responsabilidade pensando nas próximas gerações.</p></div>
+  </div>
+</section>
+
+<section id="quiz">
+  <h2>Quiz da Sustentabilidade</h2>
+  <div class="quiz-box">
+    <p><strong>Qual tecnologia ajuda a reduzir o desperdício de água no campo?</strong></p>
+    <button onclick="responderQuiz()">Ver resposta</button>
+    <p id="resultado"></p>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Contato e Conscientização</h2>
+  <form>
+    <input type="text" placeholder="Seu nome" />
+    <input type="email" placeholder="Seu e-mail" />
+    <textarea rows="5" placeholder="Sua mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>AGRINHO 2026 • Produzir hoje preservando o amanhã 🌎🌱</p>
+</footer>
+
+<script>
+  function responderQuiz() {
+    document.getElementById('resultado').innerHTML = '✅ Resposta correta: Irrigação inteligente.';
+  }
+</script>
+
+</body>
+</html>
